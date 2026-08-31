@@ -1,0 +1,13 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90" cy="90" r="72" stroke="rgb(204, 170, 53)" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M90 28C98 52 112 62 132 66" stroke="rgb(151, 19, 84)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 152C98 128 112 118 132 114" stroke="rgb(151, 19, 84)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M28 90C52 82 62 68 66 48" stroke="rgb(151, 19, 84)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M152 90C128 82 118 68 114 48" stroke="rgb(151, 19, 84)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 28C82 52 68 62 48 66" stroke="rgb(215, 130, 198)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M90 152C82 128 68 118 48 114" stroke="rgb(215, 130, 198)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 90C52 98 62 112 66 132" stroke="rgb(215, 130, 198)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M152 90C128 98 118 112 114 132" stroke="rgb(215, 130, 198)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="90" cy="90" r="18" fill="rgb(151, 19, 84)"/>
+  <circle cx="90" cy="90" r="8" fill="rgb(204, 170, 53)"/>
+</svg>
