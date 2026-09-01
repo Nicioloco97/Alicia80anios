@@ -117,7 +117,7 @@ body {
 .envelope .paper {
     position: absolute;
     left: 50%;
-    top: 32%;
+    top: 30%;
     transform: translate(-50%, 20%) scale(0.98);
     width: 90%;
     max-width: 680px;
@@ -140,7 +140,7 @@ body {
 .envelope.open .door-left { transform: rotateY(-110deg); box-shadow: inset 0 -6px 18px rgba(0,0,0,0.06); }
 .envelope.open .door-right { transform: rotateY(110deg); box-shadow: inset 0 -6px 18px rgba(0,0,0,0.06); }
 .envelope.open .door-top { transform: rotateX(-88deg) translateY(-100%); box-shadow: inset 0 -6px 12px rgba(0,0,0,0.04); }
-.envelope.open .paper { opacity: 1; transform: translate(-50%, -10%) scale(1); }
+.envelope.open .paper { opacity: 1; transform: translate(-50%, -25%) scale(1); }
 
 /* Seal that appears centered over the joined doors */
 .seal {
@@ -424,9 +424,9 @@ h2 {
 
     .envelope {
         width: 100%;
-        height: 68vh;
+        height: 88vh;
         min-height: 480px;
-        max-height: 700px;
+        max-height: 850px;
     }
 
     .paper {
@@ -461,7 +461,7 @@ h2 {
     }
 
     .card {
-        padding: 12px 14px 18px;
+        padding: 12px 14px;
     }
 
     .hero {
@@ -531,8 +531,9 @@ h2 {
 
     .envelope {
         width: 94%;
-        height: 70vh;
+        height: 95vh;
         min-height: 640px;
+        max-height: 1200px;
     }
 
     .paper {
@@ -583,7 +584,7 @@ h2 {
     }
 
     .envelope {
-        height: 60vh;
+        height: 90vh;
         min-height: 360px;
     }
 
