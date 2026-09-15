@@ -923,7 +923,7 @@ h2 {
     }
 
     .envelope.open .paper {
-    transform: translate(-50%, -20%) scale(1);
+    transform: translate(-50%, -5%) scale(1);
     }
 
     .instructions{
