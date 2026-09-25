@@ -422,7 +422,7 @@ h2 {
 }
 
 .detail h3 {
-        margin-top: 0;
+        margin: 0;
         font-family: 'Dancing Script', cursive;
         display: flex;
         font-size: 4rem;

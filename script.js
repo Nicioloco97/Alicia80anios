@@ -92,9 +92,10 @@ if (confirmationForm) {
     });
 
     const createCompanionFields = () => {
-        const count = Math.min(5, Math.max(1, Number(companionCount.value) || 1));
-        companionCount.value = count;
+        const count = Number(companionCount.value);
         companionsFields.replaceChildren();
+
+        if (!Number.isInteger(count) || count < 1 || count > 5) return;
 
         for (let index = 1; index <= count; index += 1) {
             const fieldset = document.createElement('fieldset');
@@ -131,7 +132,27 @@ if (confirmationForm) {
     confirmationForm.querySelectorAll('input[name="hasCompanion"]').forEach((input) => {
         input.addEventListener('change', toggleCompanions);
     });
-    companionCount.addEventListener('input', createCompanionFields);
+    companionCount.addEventListener('input', () => {
+        companionCount.setCustomValidity('');
+        if (companionCount.value === '') {
+            companionsFields.replaceChildren();
+            return;
+        }
+
+        const count = Number(companionCount.value);
+        if (Number.isInteger(count) && count >= 1 && count <= 5) {
+            createCompanionFields();
+        }
+    });
+    companionCount.addEventListener('blur', () => {
+        const count = Number(companionCount.value);
+        if (!Number.isInteger(count) || count < 1 || count > 5) {
+            companionCount.setCustomValidity('Escribe una cantidad entre 1 y 5.');
+            return;
+        }
+        companionCount.setCustomValidity('');
+        createCompanionFields();
+    });
     toggleCompanions();
 
     confirmationForm.addEventListener('submit', async (event) => {
